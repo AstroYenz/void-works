@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -12,16 +15,42 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "jsxImportSource": "react",
     "incremental": true,
+    "types": [
+      "node",
+      "jest"
+    ],
     "plugins": [
       {
         "name": "next"
+      },
+      {
+        "name": "jest"
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/public/*": [
+        "./public/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+    },
+    "target": "ES2022",
+    "noUncheckedIndexedAccess": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "emitDecoratorMetadata": false
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "eslint.config.mjs"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
