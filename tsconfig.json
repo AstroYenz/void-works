@@ -18,15 +18,11 @@
     "jsxImportSource": "react",
     "incremental": true,
     "types": [
-      "node",
-      "jest"
+      "node"
     ],
     "plugins": [
       {
         "name": "next"
-      },
-      {
-        "name": "jest"
       }
     ],
     "paths": {
