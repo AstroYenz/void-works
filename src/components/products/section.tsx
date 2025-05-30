@@ -1,4 +1,4 @@
-import { Activity, Code, ExternalLink, Globe, Link, Terminal } from "lucide-react"
+import { Activity, Code, Zap, Globe, Link, Terminal, ExternalLink } from "lucide-react"
 
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
 import { Button } from "@/components/ui/button"
