@@ -28,18 +28,7 @@ function Header() {
             title="Visit Spades - Online Poker Platform"
             aria-label="Visit our Spades pointing poker app (opens in new tab)"
           >
-            Product: Spades
-          </a>
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://status.voidworks.io"
-            className="flex items-center space-x-1 text-gray-400 hover:text-white transition-colors text-sm"
-            title="Void Works Status Page"
-            aria-label="Void Works Status Page (opens in new tab)"
-          >
-            <Activity className="w-3 h-3" />
-            <span>Status</span>
+            Spades
           </a>
         </nav>
       </div>
