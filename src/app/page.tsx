@@ -1,11 +1,13 @@
-import { Footer } from "@/components/footer"
-import { Header } from "@/components/header"
-import { Hero } from "@/components/hero"
-import React from "react"
+import React from 'react'
+
+import { Footer } from '@/components/footer'
+import { Header } from '@/components/header'
+import { Hero } from '@/components/hero'
+
 
 const metadata = {
-  title: "Void Works",
-  description: "Developer tools for the modern era",
+  title: 'Void Works',
+  description: 'Developer tools for the modern era',
 }
 
 function Home(): React.ReactElement {
@@ -16,7 +18,7 @@ function Home(): React.ReactElement {
 
       <main>
         <Hero />
-        {/* Products Section 
+        {/* Products Section
         Currently empty, but will be populated with products in the future.
         */}
       </main>
