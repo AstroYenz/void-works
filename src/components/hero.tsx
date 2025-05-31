@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
+import React from 'react'
 
 
-function Hero() {
+function Hero(): React.ReactNode {
   return (
     <section className="py-32">
       <div className="container mx-auto px-6">

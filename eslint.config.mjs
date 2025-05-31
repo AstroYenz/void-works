@@ -6,7 +6,6 @@ import stylistic from '@stylistic/eslint-plugin'
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
 import _import from 'eslint-plugin-import'
-import jest from 'eslint-plugin-jest'
 import perfectionist from 'eslint-plugin-perfectionist'
 import yenz from 'eslint-plugin-yenz'
 
@@ -24,14 +23,12 @@ export default [
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:import/warnings',
     'plugin:import/typescript',
-    'plugin:jest/recommended',
     'plugin:@next/next/recommended'
   )), {
     plugins: {
       '@typescript-eslint': fixupPluginRules(typescriptEslint),
       'perfectionist': perfectionist,
       'import': fixupPluginRules(_import),
-      'jest': fixupPluginRules(jest),
       'yenz': fixupPluginRules(yenz),
       '@next/next': fixupPluginRules(nextPlugin)
     },
@@ -142,19 +139,8 @@ export default [
       'yenz/no-loops': 'error',
       'yenz/type-ordering': 'error'
     }
-  }, ...fixupConfigRules(compat.extends('plugin:jest/recommended', 'plugin:jest/style')).map(config => ({
-    ...config,
-    files: ['test/**']
-  })), {
-    files: ['**/*.test.ts*'],
-    rules: {
-      'jest/prefer-called-with': 'warn',
-      'jest/prefer-equality-matcher': 'error',
-      'jest/prefer-spy-on': 'error',
-      'no-magic-numbers': 'off',
-      '@typescript-eslint/explicit-function-return-type': 'off'
-    },
   },
   {
     ignores: ['src/components/ui/**'],
-  }]
+  }
+]
