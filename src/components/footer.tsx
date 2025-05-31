@@ -1,8 +1,8 @@
-import { Activity, Code } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Activity } from 'lucide-react'
+import Image from 'next/image'
 
-function Footer() {
+
+function Footer(): React.ReactNode {
   return (
     <footer className="border-t border-gray-900 py-12 mt-20">
       <div className="container mx-auto px-6">
@@ -26,7 +26,12 @@ function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-900 text-center">
-          <p className="text-gray-500 text-xs">© {new Date().getFullYear()} Void Works</p>
+          <p className="text-gray-500 text-xs">
+            ©
+            {new Date().getFullYear()}
+            {' '}
+            Void Works
+          </p>
         </div>
       </div>
     </footer>

@@ -1,16 +1,15 @@
-import { Code } from "lucide-react"
+import { Activity } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import { Activity } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
 
 const metadata = {
-  title: "Void Works",
-  description: "Developer tools for the modern era",
+  title: 'Void Works',
+  description: 'Developer tools for the modern era',
 }
 
 
-function Header() {
+function Header(): React.ReactNode {
   return (
     <header className="border-b border-gray-900 bg-black sticky top-0 z-50">
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
@@ -48,4 +47,4 @@ function Header() {
   )
 }
 
-export { Header }
+export { Header, metadata }

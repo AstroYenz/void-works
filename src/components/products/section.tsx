@@ -1,10 +1,10 @@
-import { Activity, Code, Zap, Globe, Link, Terminal, ExternalLink } from "lucide-react"
+import { Activity, Code, Zap, Globe, Link, Terminal, ExternalLink } from 'lucide-react'
 
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
-import { Button } from "@/components/ui/button"
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 
-function ProductsSection() {
+function ProductsSection(): React.ReactNode {
   return (
     <section id="products" className="py-20">
       <div className="container mx-auto px-6">
