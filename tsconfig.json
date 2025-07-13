@@ -17,14 +17,9 @@
     "jsx": "preserve",
     "jsxImportSource": "react",
     "incremental": true,
-    "types": [
-      "node"
+    "types": ["node" ]
     ],
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    ["plugins"]
     "paths": {
       "@/public/*": [
         "./public/*"
