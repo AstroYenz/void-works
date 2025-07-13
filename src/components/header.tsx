@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const metadata = {
   title: 'Void Works',
-  description: 'Developer tools for the modern era',
+  description: 'Products for the modern era, with a focus on developer tools',
 }
 
 
@@ -28,6 +28,16 @@ function Header(): React.ReactNode {
             aria-label="Visit our Spades pointing poker app (opens in new tab)"
           >
             Spades
+          </a>
+          <a
+            href="https://gbx.io"
+            className="text-gray-400 hover:text-white transition-colors text-sm"
+            target="_blank"
+            rel="noopener"
+            title="Visit GBx - Dosing with precision and care (Launching Soon)"
+            aria-label="Visit our GBx app (Launching Soon)"
+          >
+            GBx
           </a>
         </nav>
       </div>
