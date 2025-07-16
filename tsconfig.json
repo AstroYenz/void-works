@@ -17,9 +17,7 @@
     "jsx": "preserve",
     "jsxImportSource": "react",
     "incremental": true,
-    "types": [
-      "node"
-    ],
+    "types": ["node" ],
     "plugins": [
       {
         "name": "next"
@@ -31,7 +29,7 @@
       ],
       "@/*": [
         "./src/*"
-      ],
+      ]
     },
     "target": "ES2022",
     "noUncheckedIndexedAccess": true,
