@@ -1,5 +1,6 @@
 import { Activity } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 function Footer(): React.ReactNode {
@@ -15,13 +16,13 @@ function Footer(): React.ReactNode {
           </div>
 
           <div className="flex items-center space-x-8">
-            <a href="" className="flex items-center space-x-1 text-gray-400 hover:text-white text-sm">
+            <Link href="https://status.voidworks.io/" className="flex items-center space-x-1 text-gray-400 hover:text-white text-sm">
               <Activity className="w-3 h-3" />
               <span>Status</span>
-            </a>
-            <a href="mailto:hello@voidworks.io" className="text-gray-400 hover:text-white text-sm">
+            </Link>
+            <Link href="mailto:hello@voidworks.io" className="text-gray-400 hover:text-white text-sm">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
 

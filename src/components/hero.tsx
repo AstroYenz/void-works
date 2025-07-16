@@ -9,7 +9,7 @@ function Hero(): React.ReactNode {
           <h1 className="text-5xl md:text-7xl font-light tracking-tight bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent drop-shadow-sm">
             Void Works
           </h1>
-          <p className="text-lg text-gray-400 font-light">Developer tools for the modern era</p>
+          <p className="text-lg text-gray-400 font-light">Products for the modern era</p>
         </div>
       </div>
     </section>
