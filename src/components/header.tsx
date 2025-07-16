@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const metadata = {
   title: 'Void Works',
-  description: 'Products for the modern era, with a focus on developer tools',
+  description: 'Products for the modern era',
 }
 
 
@@ -18,7 +18,7 @@ function Header(): React.ReactNode {
           </div>
           <span className="text-lg font-medium">Void Works</span>
         </Link>
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="md:flex items-center space-x-8">
           <a
             href="https://spades.poker"
             className="text-gray-400 hover:text-white transition-colors text-sm"
