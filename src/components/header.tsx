@@ -23,7 +23,7 @@ function Header(): React.ReactNode {
             href="https://spades.poker"
             className="text-gray-400 hover:text-white transition-colors text-sm"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             title="Visit Spades - Online Poker Platform"
             aria-label="Visit our Spades pointing poker app (opens in new tab)"
           >
@@ -33,7 +33,7 @@ function Header(): React.ReactNode {
             href="https://gbx.io"
             className="text-gray-400 hover:text-white transition-colors text-sm"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             title="Visit GBx - Dosing with precision and care (Launching Soon)"
             aria-label="Visit our GBx app (Launching Soon)"
           >
