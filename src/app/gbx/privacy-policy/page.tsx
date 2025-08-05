@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function PrivacyPolicy(): React.ReactElement {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-4xl">
+    <main className="container mx-auto px-4 py-8 max-w-4xl">
       <h1 className="text-3xl font-bold mb-8">Privacy Policy</h1>
 
       <div className="space-y-6 text-gray-700">
@@ -11,7 +11,7 @@ export default function PrivacyPolicy(): React.ReactElement {
           <p className="text-sm text-gray-500 mb-4">
             Last updated:
             {' '}
-            {new Date().toLocaleDateString()}
+            August 5, 2025
           </p>
           <p className="mb-4">
             Void Works ('we', 'our', or 'us') operates the GBx mobile application (the 'Service').
@@ -139,6 +139,6 @@ export default function PrivacyPolicy(): React.ReactElement {
           </ul>
         </section>
       </div>
-    </div>
+    </main>
   )
 }
