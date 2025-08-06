@@ -29,16 +29,6 @@ function Header(): React.ReactNode {
           >
             Spades
           </a>
-          <a
-            href="https://gbx.io"
-            className="text-gray-400 hover:text-white transition-colors text-sm"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Visit GBx - Dosing with precision and care (Launching Soon)"
-            aria-label="Visit our GBx app (Launching Soon)"
-          >
-            GBx
-          </a>
         </nav>
       </div>
     </header>
