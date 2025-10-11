@@ -8,6 +8,7 @@ import { Hero } from '@/components/hero'
 const metadata = {
   title: 'Void Works',
   description: 'Products for the modern era',
+  keywords: 'void works, products, modern era',
 }
 
 function Home(): React.ReactElement {
