@@ -1,14 +1,12 @@
 import React from 'react'
 
+import { metadata as metadataFile } from '@/app/metadata'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
 
 
-const metadata = {
-  title: 'Void Works',
-  description: 'Products for the modern era',
-}
+const metadata = metadataFile
 
 function Home(): React.ReactElement {
   return (
