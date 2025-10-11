@@ -29,6 +29,16 @@ function Header(): React.ReactNode {
           >
             Spades
           </a>
+          <a
+            href="https://apps.apple.com/us/app/gbx/id6749517571"
+            className="text-gray-400 hover:text-white transition-colors text-sm"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GBx - Dose Responsibly"
+            aria-label="Install GBx for iOS - Dose Responsibly"
+          >
+            GBx
+          </a>
         </nav>
       </div>
     </header>
