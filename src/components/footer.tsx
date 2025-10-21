@@ -1,42 +1,43 @@
-import { Activity } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
 
+import { footerLinks } from '@/config/links'
 
-function Footer(): React.ReactNode {
+
+export function Footer(): React.ReactNode {
   return (
-    <footer className="border-t border-gray-900 py-12 mt-20">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="flex items-center space-x-3">
-            <div className="w-5 h-5 bg-white rounded flex items-center justify-center">
-              <Image src="/logo.jpg" alt="Void Works" width={24} height={24} />
+    <footer className="border-t border-white/10 mt-24">
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="text-sm text-white">
+              ©
+              {' '}
+              {new Date().getFullYear()}
+              {' '}
+Void Works. All rights reserved.
             </div>
-            <span className="text-sm text-gray-400">Void Works</span>
-          </div>
+            <div className="flex items-center gap-6">
+              {footerLinks.map((link) => {
+                const Icon = link.icon
+                const isExternal = link.external || link.href.startsWith('http')
 
-          <div className="flex items-center space-x-8">
-            <Link href="https://status.voidworks.io/" className="flex items-center space-x-1 text-gray-400 hover:text-white text-sm">
-              <Activity className="w-3 h-3" />
-              <span>Status</span>
-            </Link>
-            <Link href="mailto:hello@voidworks.io" className="text-gray-400 hover:text-white text-sm">
-              Contact
-            </Link>
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    target={isExternal ? '_blank' : undefined}
+                    rel={isExternal ? 'noopener noreferrer' : undefined}
+                    className="flex items-center gap-2 text-sm text-white hover:text-white/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-md px-2 py-1"
+                  >
+                    {Icon && <Icon className="w-4 h-4" />}
+                    {link.label}
+                  </Link>
+                )
+              })}
+            </div>
           </div>
-        </div>
-
-        <div className="mt-8 pt-8 border-t border-gray-900 text-center">
-          <p className="text-gray-500 text-xs">
-            ©
-            {new Date().getFullYear()}
-            {' '}
-            Void Works
-          </p>
         </div>
       </div>
     </footer>
   )
 }
-
-export { Footer }
