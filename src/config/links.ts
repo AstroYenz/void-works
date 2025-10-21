@@ -10,10 +10,6 @@ export interface FooterLink {
 
 export const footerLinks: FooterLink[] = [
   {
-    label: 'Privacy Policy',
-    href: '/privacy',
-  },
-  {
     label: 'Status',
     href: 'https://status.voidworks.io',
     icon: Activity,
