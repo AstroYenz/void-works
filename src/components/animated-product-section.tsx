@@ -73,7 +73,7 @@ const products: Product[] = [
     name: 'Spades',
     icon: <Vote className={`w-16 h-16 md:w-${ICON_SIZE_SMALL} md:h-${ICON_SIZE_SMALL}`} />,
     description:
-      'Improve your team\'s pointing poker sessions with our AI enhanced platform that integrated with Linear.',
+      'Improve your team\'s pointing poker sessions with our AI enhanced platform that integrates with Linear.',
     color: 'from-indigo-600/20 via-blue-500/20 to-purple-500/20',
     url: 'https://spades.poker',
     linkText: 'Learn More'
