@@ -16,7 +16,7 @@ Void Works. All rights reserved.
             </div>
             <div className="flex items-center gap-6">
               <Link
-                href="https://status.voidworks.com"
+                href="https://status.voidworks.io"
                 target="_blank"
                 rel="noopener"
                 className="flex items-center gap-2 text-sm text-white hover:text-white/80 transition-colors"
