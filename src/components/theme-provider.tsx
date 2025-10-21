@@ -7,6 +7,6 @@ import {
 import * as React from 'react'
 
 
-export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
+export function ThemeProvider({ children, ...props }: ThemeProviderProps): React.ReactNode {
   return <NextThemesProvider {...props}>{children}</NextThemesProvider>
 }

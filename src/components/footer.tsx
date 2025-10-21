@@ -1,5 +1,6 @@
-import { Activity, Mail } from 'lucide-react'
 import Link from 'next/link'
+
+import { footerLinks } from '@/config/links'
 
 
 export function Footer(): React.ReactNode {
@@ -9,28 +10,30 @@ export function Footer(): React.ReactNode {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-sm text-white">
-©
+              ©
+              {' '}
               {new Date().getFullYear()}
               {' '}
 Void Works. All rights reserved.
             </div>
             <div className="flex items-center gap-6">
-              <Link
-                href="https://status.voidworks.io"
-                target="_blank"
-                rel="noopener"
-                className="flex items-center gap-2 text-sm text-white hover:text-white/80 transition-colors"
-              >
-                <Activity className="w-4 h-4" />
-                Status
-              </Link>
-              <a
-                href="mailto:support@voidworks.com"
-                className="flex items-center gap-2 text-sm text-white hover:text-white/80 transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                Support
-              </a>
+              {footerLinks.map((link) => {
+                const Icon = link.icon
+                const isExternal = link.external || link.href.startsWith('http')
+
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    target={isExternal ? '_blank' : undefined}
+                    rel={isExternal ? 'noopener noreferrer' : undefined}
+                    className="flex items-center gap-2 text-sm text-white hover:text-white/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-md px-2 py-1"
+                  >
+                    {Icon && <Icon className="w-4 h-4" />}
+                    {link.label}
+                  </Link>
+                )
+              })}
             </div>
           </div>
         </div>
