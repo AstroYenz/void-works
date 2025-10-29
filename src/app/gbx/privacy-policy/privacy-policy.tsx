@@ -10,7 +10,7 @@ function PrivacyPolicy(): React.ReactNode {
       <p className="text-xl text-muted-foreground text-center mb-8">
         Last updated: October 29, 2025
       </p>
-      <div className="shadow-md rounded-lg px-4 sm:px-8 md:px-16 lg:px-32 bg-background">
+      <div className="shadow-md rounded-lg px-4 sm:px-8 md:px-16 lg:px-32">
         <div>
           <div className="sqs-html-content">
 
