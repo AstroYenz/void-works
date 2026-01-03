@@ -2,9 +2,10 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { path: string[] } },
+  { params }: { params: Promise<{ path: string[] }> },
 ): Promise<NextResponse> {
-  const path = params.path.join('/')
+  const { path: pathArray } = await params
+  const path = pathArray.join('/')
 
   if (path === 'microsoft-identity-association.json') {
     return NextResponse.json(
